@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Jin-Seo Bae</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TRACKING_ID"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'TRACKING_ID');
+</script>
+</head>
+
+<body>
+
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+        <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About/Education</a></li>
+                        <li><a href="exprience.html">Experiences</a></li>
+                        <li><a href="abilities.html">Abilities</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div> </div>
+</div>
+
+<header id = "main">
+    <br><br><br><br><br>
+    <h3> Hello! My name is </h3>
+    <h1><span class = "x">Jin-Seo</span> Bae</h1>
+</header>
+
+<div class="icon-bar">
+    <a href="https://www.linkedin.com/in/jin-seo-bae/" class = "linkedin">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="mailto:jinbae@umich.edu" class="google">
+        <i class="fa fa-google"></i>
+    </a>
+    <a href="https://www.facebook.com/jinseo.bae.9?ref=bookmarks"  class ="facebook">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://twitter.com/JinBae17" class ="twitter">
+        <i class="fa fa-twitter"></i>
+    </a>
+</div>
+<br>
+     
+              
+<footer>
+    <br>
+    <p>2502 Packard st. Ann Arbor, MI 48104 · (315) 863-5606 ·
+        <a href="mailto:jinbae@umich.edu">jinbae@umich.edu</a>
+    </p>
+    <br>
+</footer>
+
+</div>
+<script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body></html>
