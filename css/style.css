@@ -5,12 +5,41 @@ body{
     background-color:orange;
     font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
+  body, html {
+    height: 100%;
+  }
+  
 .checked {
     color: darkslategray;
   }
 .abilities p:hover{
   opacity: 0.5;
   filter: alpha(opacity=50);
+}
+.parallax {
+  /* The image used */
+  background-image: url("../images/header1.jpg");
+
+  /* Set a specific height */
+  height: 100%; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+header{
+  text-align: center;
+  color: white;
+
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
 }
 .dropbtn {
   background-color: darkslategray;
@@ -38,7 +67,11 @@ body{
   60%  {color: blue;}
   90% {color: green;}
 }
-
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 /* Standard syntax */
 @keyframes example {
   0%   {color: orange;}
@@ -82,18 +115,6 @@ body{
   display: inline-block;
 }
 
-header{
-    text-align: center;
-    color: white;
-    background-image: url("../images/header1.jpg");
-    height: 800px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    overflow: hidden;
-    background-attachment: scroll;
-}
 header:hover{
   opacity: 0.9;
   filter: alpha(opacity=50);
@@ -282,6 +303,44 @@ div.form{
   padding: 30px;
 
 }
+.flip-card {
+  background-color: transparent;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
 footer{
     text-align: center;
     background-color: black;
@@ -289,7 +348,6 @@ footer{
     top:auto;
     width: 100%;
     bottom: 0px;
-
 }
 @media screen and (min-width: 800px) {
   .container{
