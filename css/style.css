@@ -354,10 +354,6 @@ footer{
     background-color: darkslategray;
     text-align:right;
     vertical-align: middle;
-    grid-column: 1/8; 
-    grid-row: 1/2;
-
-
   }
   .nav:hover{
     color:black;
