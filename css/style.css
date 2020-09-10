@@ -67,11 +67,7 @@ header{
   60%  {color: blue;}
   90% {color: green;}
 }
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
+
 /* Standard syntax */
 @keyframes example {
   0%   {color: white;}
