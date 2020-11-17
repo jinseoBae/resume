@@ -297,6 +297,10 @@ div.form{
   display: inline-block;
   padding: 30px;
 }
+.block2{
+  display: inline-grid;
+  padding: 30px;
+}
 .flip-card {
   background-color: transparent;
 }
