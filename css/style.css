@@ -357,10 +357,9 @@ footer{
     vertical-align: middle;
   }
   .nav:hover{
-    color:black;
-    opacity: 0.5;
-    
+    color:black;    
   }
+
   nav li{
     display:inline-block;
     padding-right:20px;
