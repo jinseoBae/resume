@@ -326,7 +326,12 @@ div.form{
   color: black;
 
 }
-
+.research{
+  border-style: solid;
+}
+.desc1{
+  font-size: medium;
+}
 .flip-card-back {
   background-color: dodgerblue;
   color: white;
